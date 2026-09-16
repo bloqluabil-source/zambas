@@ -37,7 +37,7 @@ body {
   height: auto;
 }
 
-/* BOTÓN ZAMBAS */
+/* ZONA CLICABLE DE ZAMBAS */
 
 .boton-zambas {
   position: absolute;
@@ -49,7 +49,7 @@ body {
   text-decoration: none;
 }
 
-/* BOTÓN LIBRO */
+/* ZONA CLICABLE DEL LIBRO */
 
 .boton-libro {
   position: absolute;
@@ -61,7 +61,7 @@ body {
   text-decoration: none;
 }
 
-/* Efecto al pasar el mouse o tocar */
+/* Efecto al tocar o pasar el mouse */
 
 .boton-zambas:hover,
 .boton-libro:hover {
@@ -69,7 +69,7 @@ body {
   border-radius: 25px;
 }
 
-/* Texto invisible para accesibilidad */
+/* Accesibilidad */
 
 .boton-zambas span,
 .boton-libro span {
@@ -92,15 +92,18 @@ body {
 
 <div class="portada">
 
+  <!-- Imagen principal de la portada -->
   <img src="portada.png"
        alt="Doce zambas y una Yapa para el recuerdo. Escribidor: Luis Alberto Bilbao la Vieja.">
 
+  <!-- Botón ZAMBAS -->
   <a href="videos.html"
      class="boton-zambas"
      aria-label="Zambas – Para que las escuches">
      <span>ZAMBAS – Para que las escuches</span>
   </a>
 
+  <!-- Botón LIBRO -->
   <a href="textos.html"
      class="boton-libro"
      aria-label="Libro – Para que lo leas">
