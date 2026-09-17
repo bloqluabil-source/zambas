@@ -3,79 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Zambas – Audios</title>
 
 <style>
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 35px 20px 45px;
   font-family: Georgia, serif;
   text-align: center;
-  padding: 40px 20px;
   background: #f5f1e8;
   color: #333;
 }
 
+.contenedor {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
 h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 .subtitulo {
-  font-size: 18px;
-  margin-bottom: 30px;
-  color: #666;
+  margin: 10px 0 28px;
+  font-size: 17px;
+  color: #777;
+  font-style: italic;
 }
 
-a {
-  display: block;
-  max-width: 420px;
-  margin: 14px auto;
-  padding: 16px;
-  background: #ffffff;
+.linea {
+  width: 70px;
+  height: 1px;
+  margin: 0 auto 28px;
+  background: #999;
+}
+
+.audio {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 520px;
+  min-height: 58px;
+  margin: 11px auto;
+  padding: 12px 18px;
+  background: rgba(255,255,255,0.82);
   color: #333;
   text-decoration: none;
-  border: 1px solid #bbb;
-  border-radius: 8px;
-  font-size: 19px;
+  border: 1px solid #d1c8b8;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+  transition: background 0.2s, transform 0.2s;
 }
 
-a:hover {
-  background: #eee9df;
+.audio:hover {
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.numero {
+  width: 38px;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: #8a8175;
+}
+
+.titulo {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+}
+
+.escuchar {
+  font-size: 13px;
+  color: #8a8175;
+  margin-left: 10px;
 }
 
 .volver {
-  margin-top: 35px;
-  font-size: 16px;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  color: #555;
+  text-decoration: none;
+  font-size: 15px;
+  border: 1px solid #c8c0b3;
+  border-radius: 20px;
+  background: transparent;
 }
+
+.volver:hover {
+  background: #ebe5da;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>ZAMBAS – AUDIOS</h1>
+<div class="contenedor">
 
-<div class="subtitulo">
-Doce zambas y una Yapa para escuchar
-</div>
+  <h1>ZAMBAS – AUDIOS</h1>
 
-<a href="https://youtu.be/T9VEknW6G40" target="_blank">Zamba de Usted</a>
+  <div class="subtitulo">
+    Doce zambas y una Yapa para escuchar
+  </div>
 
-<a href="https://youtu.be/OlnZG3AvZek" target="_blank">Memorias de Amar</a>
+  <div class="linea"></div>
 
-<a href="https://youtu.be/PgIVQCcnNLo" target="_blank">A mis amigos</a>
+  <a class="audio" href="https://youtu.be/T9VEknW6G40" target="_blank">
+    <span class="numero">01</span>
+    <span class="titulo">Zamba de Usted</span>
+    <span class="escuchar">▶</span>
+  </a>
 
-<a href="https://youtu.be/ooqf2O5cNy4" target="_blank">Mujer, niña y amiga</a>
+  <a class="audio" href="https://youtu.be/OlnZG3AvZek" target="_blank">
+    <span class="numero">02</span>
+    <span class="titulo">Memorias de Amar</span>
+    <span class="escuchar">▶</span>
+  </a>
 
-<a href="https://youtu.be/SUWgBuu2044" target="_blank">Zamba para olvidar</a>
+  <a class="audio" href="https://youtu.be/PgIVQCcnNLo" target="_blank">
+    <span class="numero">03</span>
+    <span class="titulo">A mis amigos</span>
+    <span class="escuchar">▶</span>
+  </a>
 
-<a href="https://youtu.be/jUTNfJjguBU" target="_blank">Zamba del pañuelo</a>
+  <a class="audio" href="https://youtu.be/ooqf2O5cNy4" target="_blank">
+    <span class="numero">04</span>
+    <span class="titulo">Mujer, niña y amiga</span>
+    <span class="escuchar">▶</span>
+  </a>
 
-<a href="https://youtu.be/wUsaPBJZRhI" target="_blank">En puntitas de pie</a>
+  <a class="audio" href="https://youtu.be/SUWgBuu2044" target="_blank">
+    <span class="numero">05</span>
+    <span class="titulo">Zamba para olvidar</span>
+    <span class="escuchar">▶</span>
+  </a>
 
-<a href="https://youtu.be/wMl4xdGnZHg" target="_blank">Zamba y Acuarela</a>
+  <a class="audio" href="https://youtu.be/jUTNfJjguBU" target="_blank">
+    <span class="numero">06</span>
+    <span class="titulo">Zamba del pañuelo</span>
+    <span class="escuchar">▶</span>
+  </a>
 
-<div class="volver">
-<a href="index.html">← Volver a la portada</a>
+  <a class="audio" href="https://youtu.be/wUsaPBJZRhI" target="_blank">
+    <span class="numero">07</span>
+    <span class="titulo">En puntitas de pie</span>
+    <span class="escuchar">▶</span>
+  </a>
+
+  <a class="audio" href="https://youtu.be/wMl4xdGnZHg" target="_blank">
+    <span class="numero">08</span>
+    <span class="titulo">Zamba y Acuarela</span>
+    <span class="escuchar">▶</span>
+  </a>
+
+  <a class="volver" href="index.html">
+    ← Volver a la portada
+  </a>
+
 </div>
 
 </body>
