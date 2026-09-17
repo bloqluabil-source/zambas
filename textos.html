@@ -3,86 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zambas – Texto</title>
+
+<title>El libro – Doce Zambas y una Yapa</title>
 
 <style>
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 50px 20px;
   font-family: Georgia, serif;
   text-align: center;
-  padding: 40px 20px;
-  background: #f5f1e8;
+  background: #f1ede4;
   color: #333;
+}
+
+.contenedor {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 .subtitulo {
+  margin-top: 12px;
   font-size: 18px;
-  margin-bottom: 30px;
-  color: #666;
+  color: #777;
+  font-style: italic;
 }
 
-a {
-  display: block;
-  max-width: 420px;
-  margin: 14px auto;
-  padding: 16px;
-  background: #ffffff;
-  color: #333;
+.linea {
+  width: 70px;
+  height: 1px;
+  margin: 28px auto;
+  background: #999;
+}
+
+.descripcion {
+  max-width: 580px;
+  margin: 0 auto 30px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.leer {
+  display: inline-block;
+  padding: 14px 32px;
+  background: white;
+  color: #444;
   text-decoration: none;
-  border: 1px solid #bbb;
-  border-radius: 8px;
-  font-size: 19px;
+  border: 1px solid #c8c0b3;
+  border-radius: 7px;
+  font-size: 17px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
 }
 
-a:hover {
-  background: #eee9df;
+.leer:hover {
+  background: #fafafa;
 }
 
 .volver {
+  display: inline-block;
   margin-top: 35px;
+  color: #666;
+  text-decoration: none;
+  font-size: 15px;
 }
+
+.volver:hover {
+  text-decoration: underline;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>ZAMBAS – TEXTO</h1>
+<div class="contenedor">
 
-<div class="subtitulo">
-Doce zambas y una Yapa para leer
-</div>
+  <h1>Doce Zambas y una Yapa</h1>
 
-<a href="#">Zamba de Usted</a>
+  <div class="subtitulo">
+    para el recuerdo
+  </div>
 
-<a href="#">Memorias de Amar</a>
+  <div class="linea"></div>
 
-<a href="#">Zamba por vos</a>
+  <div class="descripcion">
+    Un viaje de colores, canciones, recuerdos y pequeñas historias
+    alrededor de doce zambas y una yapa.
+  </div>
 
-<a href="#">Uno nunca entiende</a>
+  <a class="leer"
+     href="Libro Doce Zambas y una Yapa.v,imprentadocx.pdf"
+     target="_blank">
+     LEER EL LIBRO
+  </a>
 
-<a href="#">Mi abuela bailó la zamba</a>
+  <br>
 
-<a href="#">Amor en vuelo</a>
+  <a class="volver" href="index.html">
+    ← Volver a la pantalla de inicio
+  </a>
 
-<a href="#">A mis amigos</a>
-
-<a href="#">En puntitas de pie</a>
-
-<a href="#">Mujer, niña y amiga</a>
-
-<a href="#">Zamba para olvidar</a>
-
-<a href="#">Zamba del pañuelo</a>
-
-<a href="#">Zamba y Acuarela</a>
-
-<div class="volver">
-<a href="index.html">← Volver a la portada</a>
 </div>
 
 </body>
