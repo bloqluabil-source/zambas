@@ -14,16 +14,16 @@
 
 body {
   margin: 0;
-  padding: 35px 20px 45px;
+  padding: 30px 20px 40px;
   font-family: Georgia, serif;
   text-align: center;
-  background: #f5f1e8;
+  background: #f1ede4;
   color: #333;
 }
 
 .contenedor {
   width: 100%;
-  max-width: 650px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -35,7 +35,7 @@ h1 {
 }
 
 .subtitulo {
-  margin: 10px 0 28px;
+  margin: 8px 0 22px;
   font-size: 17px;
   color: #777;
   font-style: italic;
@@ -44,65 +44,108 @@ h1 {
 .linea {
   width: 70px;
   height: 1px;
-  margin: 0 auto 28px;
+  margin: 0 auto 22px;
   background: #999;
+}
+
+.zambas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 18px;
+  max-width: 820px;
+  margin: 0 auto;
 }
 
 .audio {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 520px;
-  min-height: 58px;
-  margin: 11px auto;
-  padding: 12px 18px;
+  min-height: 52px;
+  padding: 10px 15px;
   background: rgba(255,255,255,0.82);
   color: #333;
   text-decoration: none;
   border: 1px solid #d1c8b8;
   border-radius: 7px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.06);
-  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .audio:hover {
   background: #fff;
-  transform: translateY(-1px);
 }
 
 .numero {
-  width: 38px;
+  width: 34px;
   flex-shrink: 0;
-  font-size: 14px;
+  font-size: 13px;
   color: #8a8175;
 }
 
 .titulo {
   flex: 1;
   text-align: left;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .escuchar {
+  margin-left: 8px;
   font-size: 13px;
   color: #8a8175;
-  margin-left: 10px;
+}
+
+.proximamente {
+  color: #999;
+  font-style: italic;
+}
+
+.yapa-titulo {
+  margin: 25px 0 10px;
+  font-size: 18px;
+  font-style: italic;
+  color: #666;
+}
+
+.yapa {
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .volver {
   display: inline-block;
-  margin-top: 30px;
-  padding: 10px 20px;
+  margin-top: 28px;
+  padding: 9px 20px;
   color: #555;
   text-decoration: none;
   font-size: 15px;
   border: 1px solid #c8c0b3;
   border-radius: 20px;
-  background: transparent;
 }
 
 .volver:hover {
-  background: #ebe5da;
+  background: #e7e1d7;
+}
+
+
+/* En celulares: una sola columna */
+
+@media (max-width: 650px) {
+
+  body {
+    padding: 25px 14px 35px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .zambas {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .titulo {
+    font-size: 16px;
+  }
+
 }
 
 </style>
@@ -121,56 +164,100 @@ h1 {
 
   <div class="linea"></div>
 
-  <a class="audio" href="https://youtu.be/T9VEknW6G40" target="_blank">
-    <span class="numero">01</span>
-    <span class="titulo">Zamba de Usted</span>
-    <span class="escuchar">▶</span>
-  </a>
 
-  <a class="audio" href="https://youtu.be/OlnZG3AvZek" target="_blank">
-    <span class="numero">02</span>
-    <span class="titulo">Memorias de Amar</span>
-    <span class="escuchar">▶</span>
-  </a>
+  <div class="zambas">
 
-  <a class="audio" href="https://youtu.be/PgIVQCcnNLo" target="_blank">
-    <span class="numero">03</span>
-    <span class="titulo">A mis amigos</span>
-    <span class="escuchar">▶</span>
-  </a>
+    <a class="audio" href="https://youtu.be/T9VEknW6G40" target="_blank">
+      <span class="numero">01</span>
+      <span class="titulo">Zamba de Usted</span>
+      <span class="escuchar">▶</span>
+    </a>
 
-  <a class="audio" href="https://youtu.be/ooqf2O5cNy4" target="_blank">
-    <span class="numero">04</span>
-    <span class="titulo">Mujer, niña y amiga</span>
-    <span class="escuchar">▶</span>
-  </a>
+    <a class="audio" href="https://youtu.be/OlnZG3AvZek" target="_blank">
+      <span class="numero">02</span>
+      <span class="titulo">Memorias de Amar</span>
+      <span class="escuchar">▶</span>
+    </a>
 
-  <a class="audio" href="https://youtu.be/SUWgBuu2044" target="_blank">
-    <span class="numero">05</span>
-    <span class="titulo">Zamba para olvidar</span>
-    <span class="escuchar">▶</span>
-  </a>
+    <a class="audio" href="https://youtu.be/PgIVQCcnNLo" target="_blank">
+      <span class="numero">03</span>
+      <span class="titulo">A mis amigos</span>
+      <span class="escuchar">▶</span>
+    </a>
 
-  <a class="audio" href="https://youtu.be/jUTNfJjguBU" target="_blank">
-    <span class="numero">06</span>
-    <span class="titulo">Zamba del pañuelo</span>
-    <span class="escuchar">▶</span>
-  </a>
+    <a class="audio" href="https://youtu.be/ooqf2O5cNy4" target="_blank">
+      <span class="numero">04</span>
+      <span class="titulo">Mujer, niña y amiga</span>
+      <span class="escuchar">▶</span>
+    </a>
 
-  <a class="audio" href="https://youtu.be/wUsaPBJZRhI" target="_blank">
-    <span class="numero">07</span>
-    <span class="titulo">En puntitas de pie</span>
-    <span class="escuchar">▶</span>
-  </a>
+    <a class="audio" href="https://youtu.be/SUWgBuu2044" target="_blank">
+      <span class="numero">05</span>
+      <span class="titulo">Zamba para olvidar</span>
+      <span class="escuchar">▶</span>
+    </a>
 
-  <a class="audio" href="https://youtu.be/wMl4xdGnZHg" target="_blank">
-    <span class="numero">08</span>
-    <span class="titulo">Zamba y Acuarela</span>
-    <span class="escuchar">▶</span>
-  </a>
+    <a class="audio" href="https://youtu.be/jUTNfJjguBU" target="_blank">
+      <span class="numero">06</span>
+      <span class="titulo">Zamba del pañuelo</span>
+      <span class="escuchar">▶</span>
+    </a>
+
+    <a class="audio" href="https://youtu.be/wUsaPBJZRhI" target="_blank">
+      <span class="numero">07</span>
+      <span class="titulo">En puntitas de pie</span>
+      <span class="escuchar">▶</span>
+    </a>
+
+    <a class="audio" href="https://youtu.be/wMl4xdGnZHg" target="_blank">
+      <span class="numero">08</span>
+      <span class="titulo">Zamba y Acuarela</span>
+      <span class="escuchar">▶</span>
+    </a>
+
+    <div class="audio proximamente">
+      <span class="numero">09</span>
+      <span class="titulo">Zamba por vos</span>
+      <span class="escuchar">Próximamente</span>
+    </div>
+
+    <div class="audio proximamente">
+      <span class="numero">10</span>
+      <span class="titulo">Uno nunca entiende</span>
+      <span class="escuchar">Próximamente</span>
+    </div>
+
+    <div class="audio proximamente">
+      <span class="numero">11</span>
+      <span class="titulo">Mi abuela bailó la zamba</span>
+      <span class="escuchar">Próximamente</span>
+    </div>
+
+    <div class="audio proximamente">
+      <span class="numero">12</span>
+      <span class="titulo">Amor en vuelo</span>
+      <span class="escuchar">Próximamente</span>
+    </div>
+
+  </div>
+
+
+  <div class="yapa-titulo">
+    La Yapa
+  </div>
+
+  <div class="yapa">
+
+    <a class="audio" href="https://youtu.be/El4xXQMU284" target="_blank">
+      <span class="titulo">La Yapa</span>
+      <span class="escuchar">▶</span>
+    </a>
+
+  </div>
+
 
   <a class="volver" href="index.html">
-    ← Volver a la portada
+    ← Volver a la pantalla de inicio
   </a>
 
 </div>
